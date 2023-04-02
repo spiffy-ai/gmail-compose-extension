@@ -1,0 +1,36 @@
+{
+  "name": "spiffy-chrome-extension",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.2.1",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.3.0",
+    "react-scripts": "5.0.1",
+    "react-use-websocket": "^4.2.0",
+    "uuid": "8.3.2",
+    "web-vitals": "^3.0.3"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^1.0.14",
+    "@types/chrome": "^0.0.197",
+    "@types/uuid": "^8.3.2",
+    "@types/node": "^18.8.3",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "framer-motion": "^6.3.11",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vite-plugin-svgr": "^2.2.1"
+  }
+}

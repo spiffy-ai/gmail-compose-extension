@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Spiffy test",
+  "version": "0.0.0",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw9Eq3Qo+hQxVXaCBzt8WxpuuTCg1XHQv+wuH0IihujU1thMPnKNijtGxdyLrpwSCFJD0k3IJEpL+VZzveO5N2eZ7mr0H+TaLjv5qnIcqDwlTC3Dx8C9W+i8ZWGTxp+O9wtnerzwCTEtOM9QtN2/5xLC6XU2VqFbVjNaC7dOJQNg/pHvi0Lat4EGWQiOxH6JpmX5fwgKdnCQNq5qiUztG46hwRBgclgh4BXptQn3OdIVsqdKVV+jMqRDaJrUHqIjVKbeDDmhtv1ofgwx8OygTdLNBCwpJxnLj2xNhqzcvRjnyJ8ZBXgna5yEKz9MhET2R1W/Lc4ajU6EI3kYd0zxOUwIDAQAB",  
+  "description": "Code for testing basic extension functionality",
+  "action": {
+    "default_title": "Spiffy",
+    "default_popup": "index.html",
+    "default_icon": "logo192.png"
+  },
+  "background": {
+    "service_worker": "./src/background.js"
+  },
+  "options_page": "index.html",
+  "icons": {
+    "192": "logo192.png",
+    "512": "logo512.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content-script/src/main.tsx"],
+      "media": []
+    }
+  ],
+  "permissions": ["background", "identity", "storage"]
+}
